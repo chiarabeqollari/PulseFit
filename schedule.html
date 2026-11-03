@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Orari - PulseFit</title>
+</head>
+
+<body>
+    <!-- Nis Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="PulseFit Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kreu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Rreth Nesh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Klasat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="schedule.html">Orari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainers.html">Traineret</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Anetaresimi</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Na Kontaktoni</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fund Navbar -->
+    <main>
+        <!-- Nis Hero -->
+        <section class="banner-schedule">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <p>ORARI YNE</p>
+                        <h1>Planifiko rrugetimin tend te fitness</h1>
+                        <p>Zbuloni orarin javor te klasave tona dhe zgjidhni
+                            aktivitetin qe i pershtatet me mire rutines suaj.
+                            Planifikoni stervitjet sipas dites, aktivitetit
+                            dhe trajnerit tuaj te preferuar.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="classes.html" class="btn btn-dark">Shiko Klasat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Hero -->
+        <!-- Nis Filtrat -->
+        <section class="container">
+            <form>
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-md-3">
+                        <label for="day" class="form-label">Dita</label>
+                        <select id="day" class="form-select">
+                            <option value="">Te gjitha ditet</option>
+                            <option value="monday">E Hene</option>
+                            <option value="tuesday">E Marte</option>
+                            <option value="wednesday">E Merkure</option>
+                            <option value="thursday">E Enjte</option>
+                            <option value="friday">E Premte</option>
+                            <option value="saturday">E Shtune</option>
+                            <option value="sunday">E Diel</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="activity" class="form-label">Aktiviteti</label>
+                        <select id="activity" class="form-select">
+                            <option value="">Te gjitha aktivitetet</option>
+                            <option value="boxing">Boxing</option>
+                            <option value="hiit">HIIT</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="strength">Strength Training</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="trainer" class="form-label">Trajneri</label>
+                        <select id="trainer" class="form-select">
+                            <option value="">Te gjithe trajneret</option>
+                            <option value="alexander-hayes">Alexander Hayes</option>
+                            <option value="sofia-bennett">Sofia Bennett</option>
+                            <option value="isabella-morgan">Isabella Morgan</option>
+                            <option value="nathan-brooks">Nathan Brooks</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button type="reset" class="btn btn-outline-dark w-100">
+                            Pastro filtrat
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+        <!-- Fund Filtrat -->
+
+        <!-- Nis Orari Javor -->
+        <section class="orari-schedule">
+            <div class="py-5">
+                <div class="container">
+
+                    <p>ORARI JAVOR</p>
+                    <h2>Orari i klasave</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center align-middle">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ora</th>
+                                    <th scope="col">E Hene</th>
+                                    <th scope="col">E Marte</th>
+                                    <th scope="col">E Merkure</th>
+                                    <th scope="col">E Enjte</th>
+                                    <th scope="col">E Premte</th>
+                                    <th scope="col">E Shtune</th>
+                                    <th scope="col">E Diel</th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody id="schedule-body">
+
+                                <!-- 07:00 -->
+                                <tr>
+                                    <th scope="row">07:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=strength"
+                                            class="text-decoration-none text-dark">
+                                            <strong>Strength Training</strong>
+                                        </a>
+                                        <p class="mb-0">Isabella Morgan</p>
+                                        <small>60 minuta</small>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <!-- 09:00 -->
+                                <tr>
+                                    <th scope="row">09:00</th>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=yoga" class="text-decoration-none text-dark">
+                                            <strong>Yoga</strong>
+                                        </a>
+                                        <p class="mb-0">Sofia Bennett</p>
+                                        <small>60 minuta</small>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=yoga" class="text-decoration-none text-dark">
+                                            <strong>Yoga</strong>
+                                        </a>
+                                        <p class="mb-0">Sofia Bennett</p>
+                                        <small>60 minuta</small>
+                                    </td>
+                                    <td>
+                                        <a href="class-detail.html?class=strength"
+                                            class="text-decoration-none text-dark">
+                                            <strong>Strength Training</strong>
+                                        </a>
+                                        <p class="mb-0">Alexander Hayes</p>
+                                        <small>60 minuta</small>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <!-- 11:00 -->
+                                <tr>
+                                    <th scope="row">11:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=pilates"
+                                            class="text-decoration-none text-dark">
+                                            <strong>Pilates</strong>
+                                        </a>
+                                        <p class="mb-0">Sofia Bennett</p>
+                                        <small>45 minuta</small>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <!-- 17:00 -->
+                                <tr>
+                                    <th scope="row">17:00</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=pilates"
+                                            class="text-decoration-none text-dark">
+                                            <strong>Pilates</strong>
+                                        </a>
+                                        <p class="mb-0">Sofia Bennett</p>
+                                        <small>45 minuta</small>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <!-- 18:00 -->
+                                <tr>
+                                    <th scope="row">18:00</th>
+                                    <td>
+                                        <a href="class-detail.html?class=strength"
+                                            class="text-decoration-none text-dark">
+                                            <strong>Strength Training</strong>
+                                        </a>
+                                        <p class="mb-0">Alexander Hayes</p>
+                                        <small>60 minuta</small>
+                                    </td>
+                                    <td>
+                                        <a href="class-detail.html?class=boxing" class="text-decoration-none text-dark">
+                                            <strong>Boxing</strong>
+                                        </a>
+                                        <p class="mb-0">Nathan Brooks</p>
+                                        <small>45 minuta</small>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <a href="class-detail.html?class=hiit" class="text-decoration-none text-dark">
+                                            <strong>HIIT</strong>
+                                        </a>
+                                        <p class="mb-0">Nathan Brooks</p>
+                                        <small>30 minuta</small>
+                                    </td>
+                                    <td>
+                                        <a href="class-detail.html?class=boxing" class="text-decoration-none text-dark">
+                                            <strong>Boxing</strong>
+                                        </a>
+                                        <p class="mb-0">Nathan Brooks</p>
+                                        <small>45 minuta</small>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                        <div id="schedule-no-results" class="alert alert-light text-center mt-4" role="status" hidden>
+                            <h3 class="h5">Nuk u gjet asnje orar</h3>
+                            <p class="mb-0">
+                                Nuk ka seanca qe perputhen me filtrat e zgjedhur.
+                                Provoni te ndryshoni ose te pastroni filtrat.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fund Orari Javor -->
+
+    </main>
+    <!-- Nis Footer -->
+    <footer class="footer">
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <h2 class="h4">PulseFit</h2>
+                        <p>Nje vend ku fitnessi, shendeti dhe motivimi bashkohen per nje jete me aktive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TikTok</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Lidhje te shpejta</h3>
+                        <nav aria-label="Navigimi ne fund te faqes">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Kreu</a></li>
+                                <li><a href="about.html">Rreth Nesh</a></li>
+                                <li><a href="classes.html">Klasat</a></li>
+                                <li><a href="schedule.html">Orari</a></li>
+                                <li><a href="trainers.html">Trajneret</a></li>
+                                <li><a href="membership.html">Anetaresimi</a></li>
+                                <li><a href="contact.html">Na Kontaktoni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Kontakti</h3>
+                        <p>Rr. Shembulli, Tirane</p>
+                        <p>+355 69 123 4567</p>
+                        <p>info@pulsefit.al</p>
+                        <p>E Hene - E Diel: 06:00 - 22:00</p>
+                        <p class="small">
+                            *Te dhenat e kontaktit dhe imazhet jane demonstrive,
+                            te perdorura vetem per qellime te projektit.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Newsletter</h3>
+                        <p>Regjistrohuni per te marre lajmet dhe informacionet me te fundit nga PulseFit.</p>
+
+                        <form>
+                            <label for="newsletter-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Email-i juaj" required>
+                                <button class="btn btn-dark" type="submit"> -> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <p class="text-center mb-0">&copy; 2026 PulseFit. Te gjitha te drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fund Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

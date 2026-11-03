@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Traineret - PulseFit</title>
+</head>
+
+<body>
+    <!-- Nis Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="PulseFit Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kreu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Rreth Nesh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Klasat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule.html">Orari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="trainers.html">Traineret</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Anetaresimi</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">
+                        Na Kontaktoni
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fund Navbar -->
+    <main>
+        <!-- Nis Hero -->
+        <section class="banner-trainers">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <p>TRAJNERET TANE</p>
+                        <h1>Njihuni me njerezit qe ju frymezojne</h1>
+                        <p>
+                            Njihuni me ekipin e PulseFit, te apasionuar pas
+                            fitness-it dhe te perkushtuar per t'ju ndihmuar
+                            te arrini objektivat tuaja. Me specializime
+                            ne fusha te ndryshme te stervitjes, trajneret
+                            tane ju mbeshtesin ne cdo hap te rrugetimit tuaj.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#traineret" class="btn btn-dark"> Njihuni me ekipin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Hero -->
+        <!-- Nis Trajneret -->
+        <section id="traineret" class="traineret-trainers">
+            <div class="py-5">
+                <div class="container">
+                    <div
+                        class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4">
+                        <div>
+                            <p>TRAJNERET TANE</p>
+                            <h2>Njihuni me ekipin</h2>
+                        </div>
+
+                        <p>4 trajnere</p>
+                    </div>
+
+                    <div class="row g-4" id="trainers-container">
+
+                        <!-- Alexander Hayes -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="assets/images/Trainer1.png" class="card-img-top" alt="Alexander Hayes">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5">Alexander Hayes</h3>
+                                    <p>Personal Trainer</p>
+                                    <p>
+                                        Fokusohet ne stervitjen individuale,
+                                        zhvillimin e forces dhe programe
+                                        te pershtatura sipas objektivave.
+                                    </p>
+                                    <a href="#alexander-hayes" class="btn btn-outline-primary mt-auto">
+                                        Shiko profilin
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Sofia Bennett -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="assets/images/Trainer2.png" class="card-img-top" alt="Sofia Bennett">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5">Sofia Bennett</h3>
+                                    <p>Pilates &amp; Yoga</p>
+                                    <p>
+                                        Fokusohet ne fleksibilitet,
+                                        ekuiliber dhe mireqenie permes
+                                        klasave Pilates dhe Yoga.
+                                    </p>
+                                    <a href="#sofia-bennett" class="btn btn-outline-primary mt-auto">
+                                        Shiko profilin
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Isabella Morgan -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="assets/images/Trainer3.png" class="card-img-top" alt="Isabella Morgan">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5">Isabella Morgan</h3>
+                                    <p>Strength Training</p>
+                                    <p>
+                                        Ndihmon ne zhvillimin e forces,
+                                        teknikes dhe rezistences permes
+                                        stervitjeve te strukturuara.
+                                    </p>
+                                    <a href="#isabella-morgan" class="btn btn-outline-primary mt-auto">
+                                        Shiko profilin
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Nathan Brooks -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <article class="card h-100">
+                                <img src="assets/images/Trainer4.png" class="card-img-top" alt="Nathan Brooks">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5">Nathan Brooks</h3>
+                                    <p>Boxing &amp; HIIT</p>
+                                    <p>
+                                        Drejton stervitje dinamike
+                                        qe kombinojne teknikat e boksit
+                                        me ushtrime intensive HIIT.
+                                    </p>
+                                    <a href="#nathan-brooks" class="btn btn-outline-primary mt-auto">
+                                        Shiko profilin
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Trajneret -->
+        <!-- Nis Profilet e Trajnereve -->
+        <section class="py-5 " id="profilet">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <p>EKIPI YNE</p>
+                    <h2>Njihuni me trajneret tane</h2>
+                    <p>Zbuloni specializimet dhe klasat qe drejton secili trajner.</p>
+                </div>
+
+                <div id="trainer-profiles-container">
+                <!-- Profili Alexander -->
+                <article id="alexander-hayes" class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Alexander Hayes</h3>
+                        <p class="fw-semibold">Personal Trainer</p>
+
+                        <p>
+                            Alexander fokusohet ne stervitjen individuale
+                            dhe zhvillimin e forces. Ai ndihmon anetaret
+                            te ndjekin programe stervitjeje te pershtatura
+                            me objektivat e tyre.
+                        </p>
+
+                        <h4 class="h6">Klasat qe drejton:</h4>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                Strength Training
+                            </a>
+                        </div>
+
+                        <a href="schedule.html" class="btn btn-outline-dark">
+                            Shiko orarin
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Profili Sofia -->
+                <article id="sofia-bennett" class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Sofia Bennett</h3>
+                        <p class="fw-semibold">Pilates &amp; Yoga</p>
+
+                        <p>
+                            Sofia fokusohet ne permiresimin e fleksibilitetit,
+                            ekuilibrit dhe mireqenies fizike permes
+                            levizjeve te kontrolluara dhe ushtrimeve
+                            te frymemarrjes.
+                        </p>
+
+                        <h4 class="h6">Klasat qe drejton:</h4>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                Pilates
+                            </a>
+
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                Yoga
+                            </a>
+                        </div>
+
+                        <a href="schedule.html" class="btn btn-outline-dark">
+                            Shiko orarin
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Profili Isabella -->
+                <article id="isabella-morgan" class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Isabella Morgan</h3>
+                        <p class="fw-semibold">Strength Training</p>
+
+                        <p>
+                            Isabella fokusohet ne zhvillimin e forces,
+                            teknikes dhe rezistences fizike.
+                            Stervitjet e saj perfshijne ushtrime
+                            te strukturuara per grupe te ndryshme muskulore.
+                        </p>
+
+                        <h4 class="h6">Klasat qe drejton:</h4>
+                        <p>Strength &amp; Conditioning</p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                Strength Training
+                            </a>
+                        </div>
+
+                        <a href="schedule.html" class="btn btn-outline-dark">
+                            Shiko orarin
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Profili Nathan -->
+                <article id="nathan-brooks" class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Nathan Brooks</h3>
+                        <p class="fw-semibold">Boxing &amp; HIIT</p>
+
+                        <p>
+                            Nathan drejton stervitje dinamike qe
+                            kombinojne teknikat baze te boksit
+                            me ushtrime me intensitet te larte,
+                            duke u fokusuar ne force dhe qendrueshmeri.
+                        </p>
+
+                        <h4 class="h6">Klasat qe drejton:</h4>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                Boxing
+                            </a>
+
+                            <a href="classes.html" class="btn btn-sm btn-outline-secondary">
+                                HIIT
+                            </a>
+                        </div>
+
+                        <a href="schedule.html" class="btn btn-outline-dark">
+                            Shiko orarin
+                        </a>
+                    </div>
+                </article>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fund Profilet e Trajnereve -->
+
+    </main>
+    <!-- Nis Footer -->
+    <footer class="footer">
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <h2 class="h4">PulseFit</h2>
+                        <p>Nje vend ku fitnessi, shendeti dhe motivimi bashkohen per nje jete me aktive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TikTok</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Lidhje te shpejta</h3>
+                        <nav aria-label="Navigimi ne fund te faqes">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Kreu</a></li>
+                                <li><a href="about.html">Rreth Nesh</a></li>
+                                <li><a href="classes.html">Klasat</a></li>
+                                <li><a href="schedule.html">Orari</a></li>
+                                <li><a href="trainers.html">Trajneret</a></li>
+                                <li><a href="membership.html">Anetaresimi</a></li>
+                                <li><a href="contact.html">Na Kontaktoni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Kontakti</h3>
+                        <p>Rr. Shembulli, Tirane</p>
+                        <p>+355 69 123 4567</p>
+                        <p>info@pulsefit.al</p>
+                        <p>E Hene - E Diel: 06:00 - 22:00</p>
+                        <p class="small">
+                            *Te dhenat e kontaktit dhe imazhet jane demonstrative,
+                            te perdorura vetem per qellime te projektit.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Newsletter</h3>
+                        <p>Regjistrohuni per te marre lajmet dhe informacionet me te fundit nga PulseFit.</p>
+
+                        <form>
+                            <label for="newsletter-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Email-i juaj" required>
+                                <button class="btn btn-dark" type="submit"> -> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <p class="text-center mb-0">&copy; 2026 PulseFit. Te gjitha te drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fund Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

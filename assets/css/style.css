@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "Nunito", sans-serif; */
+
+:root {
+  --primary-color: #ac0b08;
+  --shadow-color-r: #7f1211;
+  --shadow-color-b: #c1ab84;
+  --secondary-color: #ddc7a0;
+  --background-color: #1d1d1d;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--background-color);
+}
+
+.navbar .logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar .navbar-brand {
+  color: var(--text-color);
+}
+.navbar .nav-link{
+  color: var(--text-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--secondary-color);
+}
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  --bs-navbar-toggler-border-color: var(--secondary-color);
+}
+
+/* Home Page */
+/* banner */
+.banner-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+
+      rgba(0, 0, 0, 0.3)),
+    url(../images/PulseFit.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.banner-home p {
+  color: var(--secondary-color);
+}
+
+.banner-home {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* rreth nesh */
+.rreth-nesh p:first-child {
+  color: var(--secondary-color);
+}
+
+/* sherbimet */
+.sherbimet-home p {
+  color: var(--secondary-color);
+}
+
+.sherbimet-home .card-body p {
+  color: var(--background-color);
+}
+
+/* klasat */
+.klasat-home .icon-link {
+  color: var(--primary-color);
+}
+
+.klasat-home p {
+  color: var(--secondary-color);
+}
+
+.klasat-home .card-body p {
+  color: var(--background-color);
+}
+
+/* na zgjidhni */
+.zgjidhni-home p {
+  color: var(--secondary-color);
+}
+
+.zgjidhni-home .card-text p {
+  color: var(--text-color);
+}
+
+/* trajneret */
+.trajneret-home .nav-link {
+  color: var(--shadow-color-r);
+}
+
+.trajneret-home p {
+  color: var(--secondary-color);
+}
+
+.trajneret-home .card-body p {
+  color: var(--background-color);
+}
+
+/* anetaresimi */
+.anetaresimi-home p:first-child {
+  color: var(--secondary-color);
+}
+
+/* galeria */
+.galeria-home p {
+  color: var(--secondary-color);
+}
+
+
+/* About Page */
+.banner-about,
+.banner-classes,
+.banner-schedule,
+.banner-trainers,
+.banner-membership,
+.banner-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+
+      rgba(0, 0, 0, 0.3)),
+    url(../images/PulseFit.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+.banner-about p {
+  color: var(--shadow-color-b);
+}
+
+/* misioni */
+
+.misioni-about p:first-child {
+  color: var(--secondary-color);
+}
+
+/* parimet */
+.parimet-about p {
+  color: var(--secondary-color);
+}
+
+.parimet-about .card-body p {
+  color: var(--background-color);
+}
+
+/* facilitetet */
+.facilitetet-about p:first-child {
+  color: var(--secondary-color);
+}
+
+/* CTA */
+
+/* Classes Page */
+
+.banner-classes p {
+  color: var(--secondary-color);
+}
+
+/* help */
+.help-classes p:first-child {
+  color: var(--secondary-color);
+}
+
+/* Schedule Page */
+
+.banner-schedule p {
+  color: var(--secondary-color);
+}
+
+.orari-schedule p{
+  color: var(--secondary-color);
+}
+
+.orari-schedule .table p{
+  color: var(--background-color);
+}
+
+/* Trainers Page */
+.banner-trainers p{
+  color: var(--secondary-color);
+}
+.traineret-trainers p{
+  color: var(--secondary-color);
+}
+.traineret-trainers .card p{
+  color: var(--background-color);
+}
+
+/* Membership Page */
+
+.banner-membership p {
+  color: var(--secondary-color);
+}
+/* krahasimi */
+
+.krahasimi-membership p{
+  color: var(--secondary-color);
+}
+.krahasimi-membership .table p{
+  color: var(--secondary-color);
+}
+/* formulari */
+.formulari-membership p:first-child{
+  color: var(--secondary-color);
+}
+.formulari-membership .btn-dark{
+  background-color: var(--shadow-color-r);
+  color: var(--text-color);
+  border-color: var(--shadow-color-r);
+}
+.formulari-membership .btn-dark:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+}
+/* paketat */
+.paketat-membership p {
+  color: var(--secondary-color);
+}
+
+.paketat-membership .card-body p {
+  color: var(--background-color);
+}
+/* faq */
+.faq-membership p{
+  color: var(--secondary-color);
+}
+
+/* Contact Page */
+.banner-contact p {
+  color: var(--secondary-color);
+}
+
+/* formulari */
+.formulari-contact p:first-child{
+  color: var(--secondary-color);
+}
+.formulari-contact .btn-dark{
+  background-color: var(--shadow-color-r);
+  color: var(--text-color);
+  border-color: var(--shadow-color-r);
+}
+.formulari-contact .btn-dark:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+}
+
+.menyrakontakti-contact p:first-child{
+  color: var(--secondary-color);
+}
+.faq-contact p{
+  color: var(--secondary-color);
+}
+
+/* Kartat */
+.card {
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Butonat */
+.navbar .btn-primary,
+.banner-home .btn-primary,
+.anetaresimi-home .btn-dark,
+.banner-about .btn-dark,
+.cta-about .btn-dark,
+.banner-schedule .btn-dark,
+.banner-trainers .btn-dark,
+.banner-membership .btn-dark,
+.banner-contact .btn-dark {
+  background-color: var(--shadow-color-r);
+  color: var(--text-color);
+  border-color: var(--shadow-color-r);
+}
+.navbar .btn-primary:hover,
+.banner-home .btn-primary:hover,
+.anetaresimi-home .btn-dark:hover,
+.banner-about .btn-dark:hover,
+.cta-about .btn-dark:hover,
+.banner-schedule .btn-dark:hover,
+.banner-trainers .btn-dark:hover,
+.banner-membership .btn-dark:hover,
+.banner-contact .btn-dark:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+}
+.banner-home .btn-outline-primary,
+.rreth-nesh .btn-outline-primary,
+.misioni-about .btn-outline-primary,
+.facilitetet-about .btn-outline-primary,
+.help-classes .btn-outline-primary,
+.cta-about .btn-outline-dark,
+.banner-membership .btn-outline-dark {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+.banner-home .btn-outline-primary:hover,
+.rreth-nesh .btn-outline-primary:hover,
+.misioni-about .btn-outline-primary:hover,
+.facilitetet-about .btn-outline-primary:hover,
+.help-classes .btn-outline-primary:hover,
+.cta-about .btn-outline-dark:hover,
+.banner-membership .btn-outline-dark:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-color: var(--secondary-color);
+}
+
+
+.btn:focus-visible,
+.form-control:focus,
+.form-select:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px rgba(221, 199, 160, 0.25);
+}
+
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-outline-dark {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-color: var(--secondary-color);
+}
+.paketat-membership .btn-dark {
+  background-color: var(--shadow-color-r);
+  color: var(--text-color);
+  border-color: var(--shadow-color-r);
+}
+
+.paketat-membership .btn-dark:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+}
+.badge-popular {
+  background-color: var(--shadow-color-r);
+  color: var(--text-color);
+  border-radius: 15px 15px 0 0;
+}
+.zgjidhni-home .btn-outline-primary{
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+.zgjidhni-home .btn-outline-primary:hover{
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-color: var(--secondary-color);
+}
+
+
+/* Imazhet */
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.trajneret-home .card-img-top {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Lidhjet e seksioneve */
+
+.klasat-home .icon-link,
+.trajneret-home .nav-link {
+    color: #d8bd94;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.klasat-home .icon-link:hover,
+.trajneret-home .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Lidhjet brenda kartave */
+
+.klasat-home .card a {
+    color: #800020;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.klasat-home .card a:hover {
+    text-decoration: underline;
+}
+
+.sherbimet-home .card-body {
+    padding: 28px 24px;
+}
+/* Footer */
+
+.footer a {
+    color: #d8bd94;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.footer li {
+    margin-bottom: 8px;
+}
+@media (max-width: 575.98px) {
+  .banner-home {
+    min-height: 350px;
+  }
+}

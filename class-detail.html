@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Detajet e klasave - PulseFit</title>
+</head>
+
+<body>
+    <!-- Nis Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="PulseFit Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kreu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Rreth Nesh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="classes.html">Klasat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule.html">Orari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainers.html">Traineret</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Anetaresimi</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">
+                        Na Kontaktoni
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fund Navbar -->
+    <main>
+        <div id="class-content">
+            <!-- Nis Hero -->
+            <section class="py-5">
+                <div class="container">
+
+                    <a href="classes.html" class="d-inline-block mb-3">
+                        &larr; Kthehu te klasat
+                    </a>
+
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-6">
+                            <p>KLASAT TONA</p>
+                            <h1 id="class-title">Functional Fitness</h1>
+
+                            <p id="class-intro">
+                                Nje klase dinamike qe kombinon ushtrime
+                                force, qendrueshmerie dhe levizje
+                                funksionale per te permiresuar
+                                formen tuaj fizike.
+                            </p>
+
+                            <div class="d-flex gap-2 flex-wrap mb-4">
+                                <span id="class-category" class="badge text-bg-light">Force</span>
+                                <span id="class-level" class="badge text-bg-light">Te gjitha nivelet</span>
+                                <span id="class-duration" class="badge text-bg-light">60 minuta</span>
+                            </div>
+
+                            <a href="#rezervimi" class="btn btn-dark">
+                                Rezervo nje prove
+                            </a>
+
+                            <a href="schedule.html" class="btn btn-outline-dark">
+                                Shiko Orarin
+                            </a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <img id="class-image" src="assets/images/PulseFit.png" class="img-fluid"
+                                alt="Fotografia e klases">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Fund Hero -->
+            <!-- Nis Pershkrimi -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-5">
+
+                        <div class="col-lg-8">
+                            <h2>Rreth kesaj klase</h2>
+
+                            <p id="class-description-1">
+                                Functional Fitness eshte nje stervitje
+                                qe ndihmon ne zhvillimin e forces,
+                                ekuilibrit, koordinimit dhe
+                                qendrueshmerise fizike.
+                            </p>
+
+                            <p id="class-description-2">
+                                Ushtrimet mund te pershtaten sipas
+                                nivelit dhe aftesive te secilit
+                                pjesemarres.
+                            </p>
+
+                            <h3>Perfitimet e klases</h3>
+
+                            <ul id="class-benefits">
+                                <li>Permireson forcen muskulore</li>
+                                <li>Rrit qendrueshmerine fizike</li>
+                                <li>Permireson ekuilibrin dhe koordinimin</li>
+                                <li>Ndihmon ne levizjet e perditshme</li>
+                            </ul>
+
+                            <h3>Cfare duhet te merrni me vete?</h3>
+
+                            <ul>
+                                <li>Veshje sportive komode</li>
+                                <li>Kepuce te pershtatshme per stervitje</li>
+                                <li>Shishe uji</li>
+                                <li>Peshqir personal</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <aside class="card">
+                                <div class="card-body">
+                                    <h2 class="h4">Informacioni i klases</h2>
+
+                                    <dl>
+                                        <dt>Kategoria</dt>
+                                        <dd id="info-category">Force</dd>
+
+                                        <dt>Niveli</dt>
+                                        <dd id="info-level">Te gjitha nivelet</dd>
+
+                                        <dt>Kohezgjatja</dt>
+                                        <dd id="info-duration">60 minuta</dd>
+
+                                        <dt>Trajneri</dt>
+                                        <dd id="info-trainer">Alexander Hayes / Isabella Morgan</dd>
+                                    </dl>
+
+                                    <a href="schedule.html" class="btn btn-outline-dark w-100">
+                                        Shiko orarin javor
+                                    </a>
+                                </div>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Fund Pershkrimi -->
+            <!-- Nis Trajneri -->
+            <section class="py-5">
+                <div class="container">
+
+                    <p>TRAJNERI I KLASES</p>
+                    <h2>Njihuni me trajnerin tuaj</h2>
+
+                    <article class="row align-items-center g-4">
+
+                        <div class="col-md-4">
+                            <img id="trainer-image" src="assets/images/Trainer1.png" class="img-fluid"
+                                alt="Fotografia e trajnerit">
+                        </div>
+
+                        <div class="col-md-8">
+                            <h3 id="trainer-name">Alexander Hayes</h3>
+                            <p id="trainer-specialty">Personal Trainer</p>
+                            <p id="trainer-experience"></p>
+
+                            <p id="trainer-description">
+                                Alexander fokusohet ne stervitjen e forces,
+                                tekniken e ushtrimeve dhe zhvillimin
+                                progresiv te aftesive fizike.
+                            </p>
+
+                            <a id="trainer-profile-link" href="trainers.html#alexander-hayes"
+                                class="btn btn-outline-dark">
+                                Shiko profilin e trajnerit
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+            <!-- Fund Trajneri -->
+            <!-- Nis Orari -->
+            <section class="py-5">
+                <div class="container">
+
+                    <p>ORARI I KLASES</p>
+                    <h2 id="class-schedule-title">Kur zhvillohet Strength Training?</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Dita</th>
+                                    <th scope="col">Ora</th>
+                                    <th scope="col">Trajneri</th>
+                                    <th scope="col">Kohezgjatja</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="class-schedule-body">
+                                <tr>
+                                    <td>E Hene</td>
+                                    <td>18:00</td>
+                                    <td>Alexander Hayes</td>
+                                    <td>60 minuta</td>
+                                </tr>
+
+                                <tr>
+                                    <td>E Merkure</td>
+                                    <td>07:00</td>
+                                    <td>Isabella Morgan</td>
+                                    <td>60 minuta</td>
+                                </tr>
+
+                                <tr>
+                                    <td>E Shtune</td>
+                                    <td>09:00</td>
+                                    <td>Alexander Hayes</td>
+                                    <td>60 minuta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a href="schedule.html" class="btn btn-outline-dark">
+                        Shiko orarin e plote
+                    </a>
+
+                </div>
+            </section>
+            <!-- Fund Orari -->
+            <!-- Nis Formulari i Proves -->
+            <section id="rezervimi" class="py-5 ">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-7">
+                            <p>PROVO NJE KLASE</p>
+                            <h2>Kerko nje seance prove</h2>
+
+                            <p>
+                                Plotesoni formularin per te shprehur
+                                interesin tuaj per kete klase.
+                            </p>
+
+                            <form id="trial-form">
+
+                                <div class="mb-3">
+                                    <label for="trial-name" class="form-label">
+                                        Emri i plote
+                                    </label>
+                                    <input type="text" id="trial-name" name="fullName" class="form-control"
+                                        autocomplete="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="trial-email" class="form-label">
+                                        Email
+                                    </label>
+                                    <input type="email" id="trial-email" name="email" class="form-control"
+                                        autocomplete="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="trial-phone" class="form-label">
+                                        Numri i telefonit
+                                    </label>
+                                    <input type="tel" id="trial-phone" name="phone" class="form-control">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="trial-day" class="form-label">
+                                        Dita e preferuar
+                                    </label>
+                                    <select id="trial-day" name="day" class="form-select" required>
+                                        <option value="">Zgjidhni diten</option>
+                                        <option value="monday">E Hene</option>
+                                        <option value="tuesday">E Marte</option>
+                                        <option value="wednesday">E Merkure</option>
+                                        <option value="thursday">E Enjte</option>
+                                        <option value="friday">E Premte</option>
+                                        <option value="saturday">E Shtune</option>
+                                        <option value="sunday">E Diel</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-dark w-100">
+                                    Dergo Kerkesen
+                                </button>
+
+                                <p class="small text-muted mt-2">
+                                    Ky eshte nje formular demonstrues.
+                                    Nuk kryhet rezervim real.
+                                </p>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Fund Formulari i Proves -->
+            <!-- Nis Klasat e Tjera -->
+            <section class="py-5">
+                <div class="container">
+
+                    <h2>Eksploroni klasa te tjera</h2>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <img src="assets/images/PulseFit.png" class="card-img-top" alt="Klasa Yoga">
+
+                                <div class="card-body">
+                                    <h3 class="h5">Yoga</h3>
+                                    <p>60 minuta</p>
+                                    <a href="class-detail.html?class=yoga" class="btn btn-outline-dark">
+                                        Shiko detajet
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <img src="assets/images/PulseFit.png" class="card-img-top" alt="Klasa Pilates">
+
+                                <div class="card-body">
+                                    <h3 class="h5">Pilates</h3>
+                                    <p>45 minuta</p>
+                                    <a href="class-detail.html?class=pilates" class="btn btn-outline-dark">
+                                        Shiko detajet
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4">
+                            <article class="card h-100">
+
+                                <img src="assets/images/boxing.png" class="card-img-top" alt="Klasa Boxing">
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5">Boxing</h3>
+                                    <p>45 minuta</p>
+
+                                    <a href="class-detail.html?class=boxing" class="btn btn-outline-dark mt-auto">
+                                        Shiko detajet
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Fund Klasat e Tjera -->
+        </div>
+        <section id="class-not-found" class="py-5" hidden>
+            <div class="container text-center">
+                <h2>Klasa nuk u gjet</h2>
+                <p>Klasa qe po kerkoni nuk eshte e disponueshme.</p>
+                <a href="classes.html" class="btn btn-dark">
+                    Kthehu te klasat
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!-- Nis Footer -->
+    <footer class="footer">
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <h2 class="h4">PulseFit</h2>
+                        <p>Nje vend ku fitnessi, shendeti dhe motivimi bashkohen per nje jete me aktive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TikTok</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Lidhje te shpejta</h3>
+                        <nav aria-label="Navigimi ne fund te faqes">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Kreu</a></li>
+                                <li><a href="about.html">Rreth Nesh</a></li>
+                                <li><a href="classes.html">Klasat</a></li>
+                                <li><a href="schedule.html">Orari</a></li>
+                                <li><a href="trainers.html">Trajneret</a></li>
+                                <li><a href="membership.html">Anetaresimi</a></li>
+                                <li><a href="contact.html">Na Kontaktoni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Kontakti</h3>
+                        <p>Rr. Shembulli, Tirane</p>
+                        <p>+355 69 123 4567</p>
+                        <p>info@pulsefit.al</p>
+                        <p>E Hene - E Diel: 06:00 - 22:00</p>
+                        <p class="small">
+                            *Te dhenat e kontaktit dhe imazhet jane demonstrative,
+                            te perdorura vetem per qellime te projektit.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-3">
+                        <h3 class="h5">Newsletter</h3>
+                        <p>Regjistrohuni per te marre lajmet dhe informacionet me te fundit nga PulseFit.</p>
+
+                        <form>
+                            <label for="newsletter-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Email-i juaj" required>
+                                <button class="btn btn-dark" type="submit"> -> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <p class="text-center mb-0">&copy; 2026 PulseFit. Te gjitha te drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fund Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

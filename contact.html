@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kontakt - PulseFit</title>
+</head>
+
+<body>
+    <!-- Nis Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="PulseFit Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kreu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Rreth Nesh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Klasat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule.html">Orari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainers.html">Traineret</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Anetaresimi</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">
+                        Na Kontaktoni
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fund Navbar -->
+    <main>
+        <!-- Nis Hero -->
+        <section class="banner-contact">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row align-items-center text-center g-4">
+                        <p>NA KONTAKTONI</p>
+                        <h1>Jemi ketu per ju</h1>
+                        <p>Keni nje pyetje, deshironi te rezervoni
+                            nje klase apo te mesoni me shume per
+                            paketat tona te anetaresimit?
+                            Ekipi yne eshte gjithmone i gatshem
+                            t'ju ndihmoje.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#formulari" class="btn btn-dark">Na dergoni nje mesazh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Hero -->
+        <!-- Nis Informacionet e Kontaktit -->
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4 text-center">
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 border h-100">
+                            <h2 class="h5">Vendndodhja</h2>
+
+                            <p class="mb-0">
+                                Rr. Shembulli, Tirane
+                            </p>
+                            <p class="mb-0">Shqiperi</p>
+                        </article>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 border h-100">
+                            <h2 class="h5">Na telefononi</h2>
+
+                            <p>
+                                <a href="tel:+355691234567">
+                                    +355 69 123 4567
+                                </a>
+                            </p>
+
+                            <p class="mb-0">
+                                E Hene - E Diel: 06:00 - 22:00
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 border h-100">
+                            <h2 class="h5">Na shkruani</h2>
+
+                            <p>
+                                <a href="mailto:info@pulsefit.al">
+                                    info@pulsefit.al
+                                </a>
+                            </p>
+
+                            <p class="mb-0">
+                                Pergjigjemi brenda 24 oreve
+                            </p>
+                        </article>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="p-4 border h-100">
+                            <h2 class="h5">Orari i punes</h2>
+
+                            <p class="mb-0">
+                                E Hene - E Diel
+                            </p>
+                            <p class="mb-0">
+                                06:00 - 22:00
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fund Informacionet e Kontaktit -->
+
+        <!-- Nis Formulari dhe Vendndodhja -->
+        <section class="py-5" id="formulari">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-lg-5 formulari-contact">
+                        <!-- Formulari -->
+
+                        <p>DERGONI NJE MESAZH</p>
+                        <h2>Na kontaktoni</h2>
+
+                        <p>
+                            Plotesoni formularin dhe ekipi yne
+                            do t'ju pergjigjet sa me shpejt.
+                        </p>
+
+                        <form id="contact-form">
+
+
+                            <div class="mb-3">
+                                <label for="contact-name" class="form-label">
+                                    Emri i plote
+                                </label>
+
+                                <input type="text" id="contact-name" name="fullName" class="form-control"
+                                    placeholder="Emri juaj" autocomplete="name" required>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="contact-email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input type="email" id="contact-email" name="email" class="form-control"
+                                    placeholder="email@example.com" autocomplete="email" required>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="contact-phone" class="form-label">
+                                    Numri i telefonit
+                                </label>
+
+                                <input type="tel" id="contact-phone" name="phone" class="form-control"
+                                    placeholder="+355 69 123 4567" autocomplete="tel">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="contact-subject" class="form-label">
+                                    Subjekti
+                                </label>
+
+                                <select id="contact-subject" name="subject" class="form-select" required>
+
+                                    <option value="">
+                                        Zgjidhni subjektin
+                                    </option>
+
+                                    <option value="membership">
+                                        Anetaresimi
+                                    </option>
+
+                                    <option value="classes">
+                                        Klasat dhe oraret
+                                    </option>
+
+                                    <option value="trainers">
+                                        Trajneret
+                                    </option>
+
+                                    <option value="other">
+                                        Pyetje tjeter
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="contact-message" class="form-label">
+                                    Mesazhi
+                                </label>
+
+                                <textarea id="contact-message" name="message" class="form-control" rows="5"
+                                    placeholder="Shkruani mesazhin tuaj..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark w-100">
+                                Dergo Mesazhin
+                            </button>
+
+                            <p class="small text-muted mt-2">
+                                Ky formular eshte demonstrues.
+                                Mesazhet nuk dergohen realisht.
+                            </p>
+
+                        </form>
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <article class="card mb-4">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95868.2159231733!2d19.817823200000003!3d41.333184700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310470fac5db%3A0x40092af10653720!2sTiran%C3%AB%2C%20Albania!5e0!3m2!1sen!2s!4v1793109642914!5m2!1sen!2s"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                            <div class="card-body">
+                                <h3 class="h5">Na gjeni ketu</h3>
+
+                                <p>
+                                    Ndodhemi ne Tirane, ne nje zone
+                                    lehtesisht te aksesueshme me
+                                    transport publik.
+                                </p>
+
+                                <p class="small text-muted">
+                                    Adresa eshte demonstrative.
+                                    Vendndodhja reale do te
+                                    percaktohet me vone.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <div class="menyrakontakti-contact">
+                            <p>MENYRA TE TJERA KONTAKTI</p>
+                            <h3 class="h5">Na ndiqni ne rrjetet sociale</h3>
+
+                            <div class="row g-3 text-center">
+
+                                <div class="col-6 col-md-3">
+                                    <article class="border p-3 h-100">
+                                        <h4 class="h6">Instagram</h4>
+                                        <p class="small">@pulsefit.al</p>
+                                        <p class="small mb-0">
+                                            Lajme dhe perditesime
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <article class="border p-3 h-100">
+                                        <h4 class="h6">Facebook</h4>
+                                        <p class="small">PulseFit</p>
+                                        <p class="small mb-0">
+                                            Komuniteti yne
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <article class="border p-3 h-100">
+                                        <h4 class="h6">TikTok</h4>
+                                        <p class="small">@pulsefit.al</p>
+                                        <p class="small mb-0">
+                                            Keshilla fitness-i
+                                        </p>
+                                    </article>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+                                    <article class="border p-3 h-100">
+                                        <h4 class="h6">YouTube</h4>
+                                        <p class="small">PulseFit</p>
+                                        <p class="small mb-0">
+                                            Video dhe klasa
+                                        </p>
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fund Formulari dhe Vendndodhja -->
+        <!-- Nis FAQ -->
+        <section class="faq-contact">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-md-7">
+
+                            <p>PYETJET E SHPESHTA</p>
+                            <h2>Pyetje rreth kontaktit</h2>
+
+                            <div class="accordion" id="contactFAQ">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-1"
+                                            aria-expanded="false" aria-controls="contact-answer-1">
+                                            Si mund te rezervoj nje klase?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-1" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-1" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            Mund te shikoni klasat dhe oraret
+                                            ne faqen tone dhe te na kontaktoni
+                                            per me shume informacion.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-2"
+                                            aria-expanded="false" aria-controls="contact-answer-2">
+                                            Cili eshte orari i punes?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-2" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-2" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            Jemi te hapur nga e Hena
+                                            deri te Dielen,
+                                            nga ora 06:00 deri ne 22:00.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-3"
+                                            aria-expanded="false" aria-controls="contact-answer-3">
+                                            Ku ndodhet PulseFit?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-3" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-3" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            Vendndodhja demonstrative eshte
+                                            ne Tirane. Adresa perfundimtare
+                                            do te vendoset me vone.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-4"
+                                            aria-expanded="false" aria-controls="contact-answer-4">
+                                            A ofroni nje prove falas?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-4" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-4" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            Per informacion rreth provave
+                                            falas, ju lutemi kontaktoni
+                                            ekipin tone.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-5"
+                                            aria-expanded="false" aria-controls="contact-answer-5">
+                                            Si mund te behem anetar?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-5" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-5" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            Vizitoni faqen e
+                                            <a href="membership.html">
+                                                anetaresimit
+                                            </a>
+                                            per te pare paketat dhe
+                                            per te plotesuar formularin.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="contact-heading-6">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#contact-answer-6"
+                                            aria-expanded="false" aria-controls="contact-answer-6">
+                                            Cfare klasash ofron PulseFit?
+                                        </button>
+                                    </h3>
+
+                                    <div id="contact-answer-6" class="accordion-collapse collapse"
+                                        aria-labelledby="contact-heading-6" data-bs-parent="#contactFAQ">
+
+                                        <div class="accordion-body">
+                                            PulseFit ofron Strength Training, Yoga,
+                                            Pilates, HIIT dhe Boxing.
+                                            Per me shume informacion,
+                                            vizitoni faqen.
+                                            <a href="classes.html">Klasat</a>.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <img src="assets/images/PulseFit.png" class="img-fluid"
+                                alt="Ambientet e brendshme te PulseFit">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund FAQ -->
+    </main>
+    <!-- Nis Footer -->
+    <footer class="footer">
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h2 class="h4">PulseFit</h2>
+                        <p>Nje vend ku fitnessi, shendeti dhe motivimi
+                            bashkohen per nje jete me aktive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TikTok</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Lidhje te shpejta</h3>
+                        <nav aria-label="Navigimi ne fund te faqes">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Kreu</a></li>
+                                <li><a href="about.html">Rreth Nesh</a></li>
+                                <li><a href="classes.html">Klasat</a></li>
+                                <li><a href="schedule.html">Orari</a></li>
+                                <li><a href="trainers.html">Trajneret</a></li>
+                                <li><a href="membership.html">Anetaresimi</a></li>
+                                <li><a href="contact.html">Na Kontaktoni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Kontakti</h3>
+                        <p>Rr. Shembulli, Tirane</p>
+                        <p>+355 69 123 4567</p>
+                        <p>info@pulsefit.al</p>
+                        <p>E Hene - E Diel: 06:00 - 22:00</p>
+                        <p class="small">
+                            *Te dhenat e kontaktit dhe imazhet jane demonstrative,
+                            te perdorura vetem per qellime te projektit.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Newsletter</h3>
+                        <p>Regjistrohuni per te marre lajmet dhe
+                            informacionet me te fundit nga PulseFit.</p>
+
+                        <form>
+                            <label for="newsletter-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Email-i juaj" required>
+                                <button class="btn btn-dark" type="submit"> -> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <p class="text-center mb-0">&copy; 2026 PulseFit. Te gjitha te drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fund Footer -->
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Anetaresimi - PulseFit</title>
+</head>
+
+<body>
+    <!-- Nis Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="PulseFit Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kreu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Rreth Nesh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">Klasat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule.html">Orari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trainers.html">Traineret</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="membership.html">Anetaresimi</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">
+                        Na Kontaktoni
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fund Navbar -->
+    <main>
+        <!-- Nis Hero -->
+        <section class="banner-membership">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row align-items-center text-center g-4">
+                        <p>ANETARESIMI</p>
+                        <h1>Me shume se thjesht nje anetaresim</h1>
+                        <p>Bashkohuni me PulseFit dhe behuni pjese
+                            e nje komuniteti mbeshtetes, me trajner
+                            profesioniste, ambiente moderne dhe klasa
+                            qe pershtaten me stilin tuaj te jeteses.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#paketat" class="btn btn-dark">Zgjidh Paketen</a>
+                            <a href="about.html" class="btn btn-outline-dark">Shiko Ambientet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Hero -->
+        <!-- Nis Perfitimet -->
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article>
+                            <h2 class="h5">Akses ne te gjitha klasat</h2>
+                            <p>
+                                Nje shumellojshmeri stervitjesh
+                                per te gjitha nivelet.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article>
+                            <h2 class="h5">Trajner profesioniste</h2>
+                            <p>
+                                Mesoni nga profesioniste
+                                te certifikuar.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article>
+                            <h2 class="h5">Ambiente moderne</h2>
+                            <p>
+                                Pajisje bashkekohore dhe
+                                hapesira komode stervitjeje.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article>
+                            <h2 class="h5">Komunitet mbeshtetes</h2>
+                            <p>
+                                Behuni pjese e nje ambienti
+                                pozitiv dhe motivues.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fund Perfitimet -->
+        <!-- Nis Paketat -->
+        <section id="paketat" class="paketat-membership">
+            <div class="py-5">
+                <div class="container">
+
+                    <div class="row align-items-end mb-4">
+                        <div class="col-md-8">
+                            <p>PAKETAT TONA</p>
+                            <h2>Zgjidhni paketen qe ju pershtatet</h2>
+                        </div>
+
+                        <div class="col-md-4 text-md-end">
+                            <div class="btn-group" role="group" aria-label="Periudha e anetaresimit">
+                                <button type="button" id="monthly-btn" class="btn btn-dark" aria-pressed="true">
+                                    Mujore
+                                </button>
+
+                                <button type="button" id="yearly-btn" class="btn btn-outline-dark" aria-pressed="false">
+                                    Vjetore
+                                </button>
+                            </div>
+                            <p class="small mt-2">
+                                Kurseni deri ne 20% me paketat vjetore
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row g-4" id="memberships-container">
+
+                        <!-- Paketa Basic -->
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <div class="card-body d-flex flex-column">
+
+                                    <h3>Basic</h3>
+                                    <p>Ideale per fillestaret</p>
+
+                                    <p>
+                                        <strong class="fs-2" id="basic-price" data-monthly="39"
+                                            data-yearly="374">39€</strong>
+                                        <span id="basic-period">/ muaj</span>
+                                    </p>
+
+                                    <ul class="list-unstyled">
+                                        <li>✓ Akses ne palester</li>
+                                        <li>✓ Klasa te perzgjedhura</li>
+                                        <li>✓ Akses ne dhomat e zhveshjes</li>
+                                        <li>✓ Evente komunitare</li>
+                                    </ul>
+
+                                    <a href="#regjistrimi" class="btn btn-outline-dark mt-auto" data-plan="basic">
+                                        Zgjidh Basic
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Paketa Premium -->
+                        <div class="col-md-4">
+                            <article class="card h-100">
+
+                                <div class="badge-popular text-center py-2">
+                                    ME E PELQYERA
+                                </div>
+
+                                <div class="card-body d-flex flex-column">
+                                    <h3>Premium</h3>
+                                    <p>Paketa jone me fleksibel</p>
+
+                                    <p>
+                                        <strong class="fs-2" id="premium-price" data-monthly="59"
+                                            data-yearly="566">59€</strong>
+                                        <span id="premium-period">/ muaj</span>
+                                    </p>
+
+                                    <ul class="list-unstyled">
+                                        <li>✓ Akses ne te gjitha klasat</li>
+                                        <li>✓ Palester dhe zone funksionale</li>
+                                        <li>✓ Dhomat e zhveshjes dhe dushet</li>
+                                        <li>✓ 1 seance personale ne muaj</li>
+                                        <li>✓ Rezervim me perparesi</li>
+                                        <li>✓ Evente komunitare</li>
+                                    </ul>
+
+                                    <a href="#regjistrimi" class="btn btn-dark mt-auto" data-plan="premium">
+                                        Zgjidh Premium
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Paketa VIP -->
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <div class="card-body d-flex flex-column">
+
+                                    <h3>VIP</h3>
+                                    <p>Eksperienca e plote PulseFit</p>
+
+                                    <p>
+                                        <strong class="fs-2" id="vip-price" data-monthly="89"
+                                            data-yearly="854">89€</strong>
+                                        <span id="vip-period">/ muaj</span>
+                                    </p>
+
+                                    <ul class="list-unstyled">
+                                        <li>✓ Akses pa limit ne te gjitha klasat</li>
+                                        <li>✓ Palester, zone funksionale dhe wellness</li>
+                                        <li>✓ Dhomat e zhveshjes dhe dushet</li>
+                                        <li>✓ 2 seanca personale ne muaj</li>
+                                        <li>✓ Keshillim ushqimor</li>
+                                        <li>✓ Rezervim me perparesi</li>
+                                        <li>✓ Evente dhe workshop-e ekskluzive</li>
+                                    </ul>
+
+                                    <a href="#regjistrimi" class="btn btn-outline-dark mt-auto" data-plan="vip">
+                                        Zgjidh VIP
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Paketat -->
+        <!-- Nis Kushtet e Anetaresimit -->
+        <section class="py-5 bg-light text-dark" id="kushtet">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+
+                        <h2 class="mb-4">Kushtet e Anetaresimit</h2>
+
+                        <p>
+                            Paketat e PulseFit ofrohen me pagese mujore
+                            ose vjetore. Cmimet jane te shprehura ne euro (€)
+                            dhe jane demonstrative.
+                        </p>
+
+                        <ul>
+                            <li class="mb-2">
+                                Anetaresimi mujor eshte i vlefshem per 1 muaj.
+                            </li>
+
+                            <li class="mb-2">
+                                Anetaresimi vjetor eshte i vlefshem per 12 muaj
+                                dhe ofron rreth 20% kursim.
+                            </li>
+
+                            <li class="mb-2">
+                                Sherbimet e perfshira varen nga paketa e zgjedhur.
+                            </li>
+
+                            <li class="mb-2">
+                                Ndryshimi ose pezullimi i anetaresimit
+                                kerkon kontaktimin e stafit.
+                            </li>
+
+                            <li class="mb-2">
+                                Plotesimi i formularit nuk perben
+                                regjistrim apo pagese reale.
+                            </li>
+                        </ul>
+
+                        <p class="small text-muted mt-3">
+                            Ky website eshte nje projekt demonstrues.
+                            Paketat, cmimet dhe kushtet jane krijuar
+                            vetem per qellime prezantimi.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Fund Kushtet e Anetaresimit -->
+        <!-- Nis Krahasimi dhe Regjistrimi -->
+        <section>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-7 krahasimi-membership">
+
+                            <!-- Krahasimi -->
+
+                            <p>KRAHASIMI I PAKETAVE</p>
+                            <h2>Krahasoni paketat e anetaresimit</h2>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Sherbimi</th>
+                                            <th scope="col">Basic</th>
+                                            <th scope="col">Premium</th>
+                                            <th scope="col">VIP</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Akses ne palester</th>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Klasa ne grup</th>
+                                            <td>Te perzgjedhura</td>
+                                            <td>Te gjitha</td>
+                                            <td>Te gjitha</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Seanca personale</th>
+                                            <td>—</td>
+                                            <td>1 / muaj</td>
+                                            <td>2 / muaj</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Dhomat e zhveshjes dhe dushet</th>
+                                            <td>Vetem dhomat e zhveshjes</td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Keshillim ushqimor</th>
+                                            <td>—</td>
+                                            <td>—</td>
+                                            <td>✓</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Rezervim me perparesi</th>
+                                            <td>—</td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Evente ekskluzive</th>
+                                            <td>—</td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 formulari-membership" id="regjistrimi">
+                            <!-- Formulari -->
+
+                            <p>BASHKOHUNI TANI</p>
+                            <h2>Behuni anetar</h2>
+
+                            <p>
+                                Plotesoni formularin dhe ekipi yne
+                                do t'ju kontaktoje me informacione
+                                te metejshme.
+                            </p>
+
+                            <form id="membership-form">
+
+                                <div class="mb-3">
+                                    <label for="member-name" class="form-label">
+                                        Emri i plote
+                                    </label>
+                                    <input type="text" id="member-name" name="fullName" class="form-control"
+                                        placeholder="Emri juaj" autocomplete="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="member-email" class="form-label">
+                                        Email
+                                    </label>
+                                    <input type="email" id="member-email" name="email" class="form-control"
+                                        placeholder="email@example.com" autocomplete="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="member-phone" class="form-label">
+                                        Numri i telefonit
+                                    </label>
+                                    <input type="tel" id="member-phone" name="phone" class="form-control"
+                                        placeholder="+355 69 123 4567" autocomplete="tel" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="member-plan" class="form-label">
+                                        Paketa e preferuar
+                                    </label>
+                                    <select id="member-plan" name="plan" class="form-select" required>
+                                        <option value="">Zgjidhni paketen</option>
+                                        <option value="basic">Basic</option>
+                                        <option value="premium">Premium</option>
+                                        <option value="vip">VIP</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="member-period" class="form-label">
+                                        Periudha e anetaresimit
+                                    </label>
+
+                                    <select id="member-period" name="period" class="form-select" required>
+                                        <option value="monthly">Mujore</option>
+                                        <option value="yearly">Vjetore</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-dark w-100">
+                                    Dergo Kerkesen
+                                </button>
+
+                                <p class="small text-muted mt-2">
+                                    Ky eshte nje formular demonstrues.
+                                    Nuk kryhet regjistrim apo pagese reale.
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund Krahasimi dhe Regjistrimi -->
+        <!-- Nis FAQ -->
+        <section class="faq-membership">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-md-7">
+                            <p>PYETJET E SHPESHTA</p>
+                            <h2>Pyetje rreth anetaresimit</h2>
+
+                            <div class="accordion" id="membershipFAQ">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="faq-heading-1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-answer-1"
+                                            aria-expanded="false" aria-controls="faq-answer-1">
+                                            A mund ta ndryshoj paketen me vone?
+                                        </button>
+                                    </h3>
+
+                                    <div id="faq-answer-1" class="accordion-collapse collapse"
+                                        aria-labelledby="faq-heading-1" data-bs-parent="#membershipFAQ">
+                                        <div class="accordion-body">
+                                            Po, mund te kerkoni ndryshimin
+                                            e paketes duke kontaktuar ekipin tone.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="faq-heading-2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-answer-2"
+                                            aria-expanded="false" aria-controls="faq-answer-2">
+                                            A ka tarife regjistrimi?
+                                        </button>
+                                    </h3>
+
+                                    <div id="faq-answer-2" class="accordion-collapse collapse"
+                                        aria-labelledby="faq-heading-2" data-bs-parent="#membershipFAQ">
+                                        <div class="accordion-body">
+                                            Informacioni per tarifat
+                                            konfirmohet gjate regjistrimit.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="faq-heading-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-answer-3"
+                                            aria-expanded="false" aria-controls="faq-answer-3">
+                                            A mund ta pezulloj anetaresimin?
+                                        </button>
+                                    </h3>
+
+                                    <div id="faq-answer-3" class="accordion-collapse collapse"
+                                        aria-labelledby="faq-heading-3" data-bs-parent="#membershipFAQ">
+                                        <div class="accordion-body">
+                                            Per mundesite e pezullimit,
+                                            ju lutemi kontaktoni ekipin tone.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="faq-heading-4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-answer-4"
+                                            aria-expanded="false" aria-controls="faq-answer-4">
+                                            A ofroni ulje per studentet?
+                                        </button>
+                                    </h3>
+
+                                    <div id="faq-answer-4" class="accordion-collapse collapse"
+                                        aria-labelledby="faq-heading-4" data-bs-parent="#membershipFAQ">
+                                        <div class="accordion-body">
+                                            Kontaktoni ekipin tone per
+                                            ofertat dhe uljet e disponueshme.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <img src="assets/images/PulseFit.png" class="img-fluid"
+                                alt="Ambiente te brendshme te PulseFit">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fund FAQ -->
+    </main>
+    <!-- Nis Footer -->
+    <footer class="footer">
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h2 class="h4">PulseFit</h2>
+                        <p>Nje vend ku fitnessi, shendeti dhe motivimi
+                            bashkohen per nje jete me aktive.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">TikTok</a>
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Lidhje te shpejta</h3>
+                        <nav aria-label="Navigimi ne fund te faqes">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Kreu</a></li>
+                                <li><a href="about.html">Rreth Nesh</a></li>
+                                <li><a href="classes.html">Klasat</a></li>
+                                <li><a href="schedule.html">Orari</a></li>
+                                <li><a href="trainers.html">Trajneret</a></li>
+                                <li><a href="membership.html">Anetaresimi</a></li>
+                                <li><a href="contact.html">Na Kontaktoni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Kontakt -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Kontakti</h3>
+                        <p>Rr. Shembulli, Tirane</p>
+                        <p>+355 69 123 4567</p>
+                        <p>info@pulsefit.al</p>
+                        <p>E Hene - E Diel: 06:00 - 22:00</p>
+                        <p class="small">
+                            *Te dhenat e kontaktit dhe imazhet jane demonstrative,
+                            te perdorura vetem per qellime te projektit.
+                        </p>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <h3 class="h5">Newsletter</h3>
+                        <p>Regjistrohuni per te marre lajmet dhe
+                            informacionet me te fundit nga PulseFit.</p>
+
+                        <form>
+                            <label for="newsletter-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Email-i juaj" required>
+                                <button class="btn btn-dark" type="submit"> -> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <p class="text-center mb-0">&copy; 2026 PulseFit. Te gjitha te drejtat e rezervuara.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- fund Footer -->
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
